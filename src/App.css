@@ -43,7 +43,7 @@ form {
   width: 300px;
 }
 
-form h2 {
+form label {
   font-size: 12px;
   line-height: 10px;
   margin-bottom: 5px;
@@ -59,6 +59,16 @@ form input {
   background-color: #fcf9f9;
   padding-left: 10px;
   margin: 5px 0 25px;
+  position: static;
+}
+
+.eye-password {
+  align-self: flex-end;
+  color: #adadad;
+  cursor: pointer;
+  position: relative;
+  bottom: 55px;
+  right: 10px;
 }
 
 form .submit-button {
@@ -69,6 +79,15 @@ form .submit-button {
   font-size: 15px;
   font-weight: 700;
   margin-top: 20px;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
 }
 
 /* ------------ RESULTS ------------ */
