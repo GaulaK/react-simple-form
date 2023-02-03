@@ -41,40 +41,44 @@ const Form = ({
           autoComplete="off"
           onChange={handleEmailChange}
         ></input>
-        <label htmlFor="password">Password</label>
-        <input
-          className={!samePassword ? "red" : null}
-          placeholder="lErEaCtEuR202"
-          type={seePassword ? "text" : "password"}
-          name="password"
-          id="password"
-          value={password}
-          autoComplete="off"
-          onChange={handlePasswordChange}
-        ></input>
-        <FontAwesomeIcon
-          className="eye-password"
-          onClick={() => setSeePassword(!seePassword)}
-          icon={seePassword ? "eye" : "eye-slash"}
-          size="1x"
-        />
-        <label htmlFor="confirmPassword">Confirm your password</label>
-        <input
-          className={!samePassword ? "red" : null}
-          placeholder="lErEaCtEuR202"
-          type={seeConfirmPassword ? "text" : "password"}
-          name="confirmPassword"
-          id="confirmPassword"
-          value={confirmPassword}
-          autoComplete="off"
-          onChange={handleConfirmPasswordChange}
-        ></input>
-        <FontAwesomeIcon
-          className="eye-password"
-          onClick={() => setSeeConfirmPassword(!seeConfirmPassword)}
-          icon={seeConfirmPassword ? "eye" : "eye-slash"}
-          size="1x"
-        />
+        <div>
+          <label htmlFor="password">Password</label>
+          <input
+            className={!samePassword ? "red" : null}
+            placeholder="lErEaCtEuR202"
+            type={seePassword ? "text" : "password"}
+            name="password"
+            id="password"
+            value={password}
+            autoComplete="off"
+            onChange={handlePasswordChange}
+          ></input>
+          <FontAwesomeIcon
+            className="eye-password"
+            onClick={() => setSeePassword(!seePassword)}
+            icon={seePassword ? "eye" : "eye-slash"}
+            size="1x"
+          />
+        </div>
+        <div>
+          <label htmlFor="confirmPassword">Confirm your password</label>
+          <input
+            className={!samePassword ? "red" : null}
+            placeholder="lErEaCtEuR202"
+            type={seeConfirmPassword ? "text" : "password"}
+            name="confirmPassword"
+            id="confirmPassword"
+            value={confirmPassword}
+            autoComplete="off"
+            onChange={handleConfirmPasswordChange}
+          ></input>
+          <FontAwesomeIcon
+            className="eye-password"
+            onClick={() => setSeeConfirmPassword(!seeConfirmPassword)}
+            icon={seeConfirmPassword ? "eye" : "eye-slash"}
+            size="1x"
+          />
+        </div>
         {!samePassword && (
           <span className="error-message">
             Les mots de passe ne sont pas identiques !

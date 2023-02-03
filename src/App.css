@@ -49,6 +49,10 @@ form label {
   margin-bottom: 5px;
 }
 
+form div {
+  position: relative;
+}
+
 form input {
   width: 300px;
   border: 1px solid #d3d3d3;
@@ -59,16 +63,16 @@ form input {
   background-color: #fcf9f9;
   padding-left: 10px;
   margin: 5px 0 25px;
-  position: static;
+  position: relative;
 }
 
 .eye-password {
   align-self: flex-end;
   color: #adadad;
   cursor: pointer;
-  position: relative;
-  bottom: 55px;
-  right: 10px;
+  position: absolute;
+  right: 15px;
+  top: 40%;
 }
 
 form .submit-button {
